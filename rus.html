@@ -26,7 +26,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 90%;
+            width: 85%; /* Slightly smaller than before */
         }
 
         .container {
@@ -34,55 +34,55 @@
             flex-direction: column;
             align-items: center;
             background-color: #0a101e;
-            border-radius: 15px;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 0 10px 5px #ffa500;
+            border-radius: 12px; /* Smaller radius */
+            padding: 8px; /* Smaller padding */
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 0 8px 4px #ffa500; /* Subtler shadow */
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(5, 55px);
-            grid-template-rows: repeat(5, 55px);
-            gap: 9.5px;
+            grid-template-columns: repeat(5, 45px); /* Smaller cells */
+            grid-template-rows: repeat(5, 45px);
+            gap: 7px; /* Smaller gaps */
         }
 
         .square {
             background-color: #238fa9;
-            border-radius: 5px;
+            border-radius: 4px; /* Smaller border radius */
             transition: background-color 0.5s ease;
         }
 
         button {
-            margin-top: 12.5px;
-            padding: 12.5px 22.5px;
+            margin-top: 10px;
+            padding: 10px 18px; /* Reduced padding */
             border: none;
-            border-radius: 7.5px;
+            border-radius: 6px; /* Smaller radius */
             background-color: #007BFF;
             color: white;
-            font-size: 16px;
+            font-size: 14px; /* Reduced font size */
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 3.5px rgba(0, 0, 0, 0.15); /* Subtler shadow */
             font-family: 'Intro', sans-serif;
             text-align: center;
-            line-height: 1.2;
+            line-height: 1.1; /* Closer line height */
         }
 
         button:hover, button:focus {
             background-color: #0056b3;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.25); /* Subtle change on hover */
             transform: translateY(-1px);
         }
 
         button:active {
             background-color: #004885;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Less shadow on active */
             transform: translateY(0.5px);
         }
 
         #trap-count-label {
-            margin-top: 25px;
-            font-size: 35px;
+            margin-top: 20px;
+            font-size: 28px; /* Smaller font size */
             color: white;
             font-family: 'Intro', sans-serif;
             font-weight: bold;
@@ -92,39 +92,39 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 5px 0;
+            margin: 4px 0; /* Smaller margin */
         }
 
         .count-display {
-            width: 40px;
+            width: 35px; /* Smaller width */
             text-align: center;
-            font-size: 40px;
+            font-size: 35px; /* Smaller font size */
             font-family: 'Intro', sans-serif;
             color: white;
-            margin: 0 15px;
+            margin: 0 12px; /* Smaller margins */
         }
 
         .icon {
             cursor: pointer;
-            width: 57px;
-            height: 57px;
+            width: 50px; /* Smaller icons */
+            height: 50px;
         }
 
         #loading-text {
             cursor: default;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 8px; /* Smaller bottom margin */
             font-family: 'Intro', sans-serif;
         }
 
         #loading-text span {
             display: inline-block;
             animation: bounce 0.3s ease infinite alternate;
-            font-size: 60px;
+            font-size: 50px; /* Smaller font size */
             color: #ffffff;
-            text-shadow: 0 0.5px 0 #ccc, 0 1px 0 #ccc, 0 1.5px 0 #ccc, 0 2px 0 #ccc,
-                        0 2.5px 0 #ccc, 0 3px 0 transparent, 0 3.5px 0 transparent, 0 4px 0 transparent,
-                        0 4.5px 0 transparent, 0 5px 5px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 0.25px 0 #ccc, 0 0.5px 0 #ccc, 0 0.75px 0 #ccc, 0 1px 0 #ccc,
+                        0 1.25px 0 #ccc, 0 1.5px 0 transparent, 0 1.75px 0 transparent, 0 2px 0 transparent,
+                        0 2.25px 0 transparent, 0 2.5px 2.5px rgba(0, 0, 0, 0.2);
         }
 
         #loading-text span:nth-child(1) { animation-delay: 0s; }
@@ -138,18 +138,17 @@
         @keyframes bounce {
             0% {
                 transform: translateY(0px);
-                text-shadow: 0 0.5px 0 #ccc, 0 1px 0 #ccc, 0 1.5px 0 #ccc, 0 2px 0 #ccc,
-                             0 2.5px 0 #ccc, 0 3px 0 transparent, 0 3.5px 0 transparent, 0 4px 0 transparent,
-                             0 4.5px 0 transparent, 0 5px 5px rgba(0, 0, 0, 0.4);
+                text-shadow: 0 0.25px 0 #ccc, 0 0.5px 0 #ccc, 0 0.75px 0 #ccc, 0 1px 0 #ccc,
+                             0 1.25px 0 #ccc, 0 1.5px 0 transparent, 0 1.75px 0 transparent, 0 2px 0 transparent,
+                             0 2.25px 0 transparent, 0 2.5px 2.5px rgba(0, 0, 0, 0.2);
             }
             100% {
-                transform: translateY(-10px);
-                text-shadow: 0 0.5px 0 #ccc, 0 1px 0 #ccc, 0 1.5px 0 #ccc, 0 2px 0 #ccc,
-                             0 2.5px 0 #ccc, 0 3px 0 transparent, 0 3.5px 0 transparent, 0 4px 0 transparent,
-                             0 4.5px 0 transparent, 0 25px 12.5px rgba(0, 0, 0, 0.2);
+                transform: translateY(-5px);
+                text-shadow: 0 0.25px 0 #ccc, 0 0.5px 0 #ccc, 0 0.75px 0 #ccc, 0 1px 0 #ccc,
+                             0 1.25px 0 #ccc, 0 1.5px 0 transparent, 0 1.75px 0 transparent, 0 2px 0 transparent,
+                             0 2.25px 0 transparent, 0 12.5px 6.25px rgba(0, 0, 0, 0.1);
             }
         }
-
     </style>
 </head>
 <body>
